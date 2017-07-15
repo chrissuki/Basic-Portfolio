@@ -1,3 +1,5 @@
+/* css for html portfolio, contact, and index */
+
 body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	background-color: #ffffff;
@@ -8,6 +10,7 @@ body {
 	background-image: url('https://wallpaperscraft.com/image/gray_emboss_circles_decorative_coating_72421_2560x1440.jpg');
 }
 
+/*header css */
 header {
 	background-color: #ffffff;
 	border-color: #cccccc;
@@ -17,11 +20,12 @@ header {
 	border-style: solid;
     border-bottom-width: 2px;
     margin: 0px 0px 0px 0px;
-
 }    
+
 h2{
 	margin:0px 0px 0px 0px;
 }
+
 .name{
 	background-color: #4aaaa5;
 	color: white;
@@ -45,11 +49,14 @@ a:hover {
 	color:red;
 }
 
+/* About me section */
 .aboutMe{
+	clear:both;
+	overflow:auto;
 	float:left;
 	width:60%;
 	background-color:#ffffff;
-	margin:50px 0px 50px 50px;
+	margin:50px 0px 65px 50px;
 }
 
 h2, h3{
@@ -57,18 +64,18 @@ h2, h3{
 }
 
 .aboutMeTitle{
-	margin: 0px 40px 30px 40px;
+	margin: 0px 40px 35px 40px;
 	padding-top:30px;
 	padding-bottom:30px;
 	border-style: solid;
 	border-width:0px;
-    border-bottom-width: 5px;
+    border-bottom-width: 3px;
     border-color: #cccccc;
     font-size:175%;
 }
 
 .profPicture{
-	margin:0px 0px 0px 40px;
+	margin:0px 20px 0px 40px;
 	width:200px;
 	height:200px;
 	float:left;
@@ -77,8 +84,69 @@ h2, h3{
 p{
 	margin:0px 50px 40px 40px;
 	float:none;
+	font-size:125%;
+	line-height:150%;
 }
 
+/*contact box*/
+.contactBox{
+	float:left;
+	width:60%;
+	height:550px;
+	background-color:#ffffff;
+	margin:50px 0px 106px 50px;
+}
+
+.contactHeading{
+	margin: 0px 40px 60px 40px;
+	padding-top:30px;
+	padding-bottom:30px;
+	border-style: solid;
+	border-width:0px;
+    border-bottom-width: 3px;
+    border-color: #cccccc;
+    font-size:175%;
+}
+
+form{
+	margin:-30px 40px 0px 40px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.messageHeading{
+	padding:1px;
+}
+textarea{
+	width:100%;
+	height:20%;
+}
+
+/*submit button */
+input[type=submit] {
+    width: 15%;
+    height: 2%;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #348E8E;
+}
+
+
+/*Connect with me box*/
 .connect{
 	margin:50px 0px 0px 50px;
 	width:20%;
@@ -91,34 +159,36 @@ p{
 .headerConnect{
 	text-align:center;
 	border-bottom-style:solid;
-	border-bottom-width:3px;
+	border-bottom-width:2px;
 	border-bottom-color:#cccccc;
 	padding:20px;
 	margin:10px 52px 0px 43px;
 	font-size:125%;
-}	
+}
+
+#git,#link,#stack{
+	width: 60px;
+    margin-left: 4px;
+}
 .connectLinks{
 	margin: 20px 0px 0px 35px;
 }
 
-#git,#link,#stack{
-	width:40px;
-}
-
+/* footer */
 footer{
-	margin-top:50px;
 	clear:both;
 	overflow:auto;
 	background-color: #666666;
 	font-size:60%;
-	padding:30px;
+	padding-top:30px;
+	padding-bottom:30px;
 	text-align:center;
 	color:white;
 	border-top-style:solid;
 	border-top-width:3px;
 	border-top-color:#4aaaa5;
-}
-#git,#link,#stack{
-	width: 60px;
-    margin-left: 4px;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    left:0;
 }
