@@ -198,8 +198,11 @@ input[type=submit]:hover {
 	margin-bottom:40px;
 	position:relative;
 }
-.portfolioLink{
-	content:"";
+.portfolioBox:hover{
+	-ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    transform: rotate(2deg);
+    filter:brightness(0.7);
 }
 .portfolioPic{
 	width: 100%;
